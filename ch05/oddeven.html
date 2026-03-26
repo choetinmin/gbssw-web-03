@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>홀수/짝수</title>
+    </head>
+    <body>
+        <input id="input_number" type="number"/>
+        <button id="btn" type="button">확인</button>
+        <div id="print"></div>
+    </body>
+</html>
+<script>
+    //1.버튼 클릭 이벤트 등록
+    var btn=document.getElementById("btn").onclick=function(){
+        // 2.input 내 value 조회
+        let num=document.getElementById("input_number").value;
+
+        let result=null;
+        //num이 짝수인지 홀수인지 판별
+        if (num%2==0) {
+            //딱수
+            result="짝수";
+        } else {
+            //홀수
+            result="홀수";
+        }
+        document.getElementById("print").textContent=result;
+    };
+</script>
+</html>
