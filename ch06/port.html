@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+        *{
+            font-family: 'Gamja Flower','Noto Sans';
+            box-sizing:border-box;
+        }
+        html,
+        body{
+            background-color:rgb(230, 241, 241);
+        }
+        h1{
+            background-color: rgb(230, 241, 241);
+        }
+        .wrap{
+            width:100%;
+            display:flex;
+        }
+        .profile_wrap{
+            font-size:18px;
+            width:50%;
+            background-color:#d4ccff;
+            color:white;
+        }
+        .btn_wrap{
+            width:50%;
+            background-color:#d4ccff;
+            color:white;
+        }
+        .btn_wrap button{
+            width:80px;
+            height:30px;
+            background-color: #5fffe4;
+            cursor:pointer;
+            border-radius:10px;
+            border: none;
+        }
+        .btn_wrap button:hover{
+            background-color: rgb(69, 200, 191);
+            box-shadow: 5px 5px 2px rgba(79,79,79);
+        }
+        img{
+            width:300px;
+        }
+    </style>
+</head>
+<body>
+        <h1>안녕하세요, 최태민입니다.</h1>
+    <div class="wrap">
+        <div class="profile_wrap">
+            <div>나이:15</div>
+            <div>취미:게임</div>
+            <div>장래희망:게임개발자</div>
+        </div>
+        <div class="btn_wrap">
+            <button class="btn-1" onclick="goNaver()">네이버로 이동</button>
+            <button class="btn-2" onclick="goGoogle()">구글로 이동</button>
+            <button class="btn-3">이동 안할거야</button>
+        </div>
+    </div>
+    <img src="https://lh5.googleusercontent.com/proxy/KJT6IbiuWSQWdXT8Q6CK3_G2JLRkVBjCWvuAt-Ixyf69zQDCWtiG8b-6q6gB6FKzKlyMlu2jbqXytGwvzFJERew83gWNtIdp4W7Ru9Bp"
+</body>
+    <script>
+        function goNaver() {
+            location.href = "https://www.naver.com/";
+        }
+        function goGoogle() {
+            location.href = "https://www.google.com/";
+        }
+    </script>
+</html>
